@@ -17,7 +17,7 @@ namespace aspnet_mysql_sample.Models
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 MySqlCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM sampledb.Car;";
+                command.CommandText = "SELECT * FROM Car;";
 
                 if (connection.State != System.Data.ConnectionState.Open)
                     connection.Open();
@@ -47,7 +47,7 @@ namespace aspnet_mysql_sample.Models
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 MySqlCommand command = connection.CreateCommand();
-                command.CommandText = "INSERT INTO default.Car (Model, Year, Manufacturer) VALUES (?Model, ?Year, ?Manufacturer);";
+                command.CommandText = "INSERT INTO Car (Model, Year, Manufacturer) VALUES (?Model, ?Year, ?Manufacturer);";
 
                 command.Parameters.AddWithValue("?Model", car.Model);
                 command.Parameters.AddWithValue("?Year", car.Year);
