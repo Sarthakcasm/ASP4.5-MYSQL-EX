@@ -22,11 +22,7 @@ using System.Web;
 
 namespace aspnet_mysql_sample
 {
-    string MYSQL_SERVICE_HOST= "172.17.0.4";
-    string MYSQL_SERVICE_PORT= "3306";
-    string MYSQL_DATABASE= "sampledb";
-    string MYSQL_USER="sa";
-    string MYSQL_PASSWORD="admin";
+   
     
     public static class ConnectionSetting
     {
@@ -34,6 +30,11 @@ namespace aspnet_mysql_sample
         {
             get
             {
+               string MYSQL_SERVICE_HOST= "172.17.0.4";
+    string MYSQL_SERVICE_PORT= "3306";
+    string MYSQL_DATABASE= "sampledb";
+    string MYSQL_USER="sa";
+    string MYSQL_PASSWORD="admin";
                 if (!(string.IsNullOrEmpty(MYSQL_SERVICE_HOST) || string.IsNullOrEmpty(MYSQL_SERVICE_PORT)
                 || string.IsNullOrEmpty(MYSQL_DATABASE) || string.IsNullOrEmpty(MYSQL_USER) || string.IsNullOrEmpty(MYSQL_PASSWORD)))
                 {
