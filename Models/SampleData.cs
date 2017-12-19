@@ -17,7 +17,7 @@ namespace aspnet_mysql_sample.Models
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 MySqlCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM default.Car;";
+                command.CommandText = "SELECT * FROM sampledb.Car;";
 
                 if (connection.State != System.Data.ConnectionState.Open)
                     connection.Open();
