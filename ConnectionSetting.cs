@@ -22,6 +22,12 @@ using System.Web;
 
 namespace aspnet_mysql_sample
 {
+    static string MYSQL_SERVICE_HOST= "172.17.0.4";
+    static string MYSQL_SERVICE_PORT= "3306";
+    static string MYSQL_DATABASE= "sampledb";
+    static string MYSQL_USER="sa";
+    static string MYSQL_PASSWORD="admin";
+    
     public static class ConnectionSetting
     {
         internal static string CONNECTION_STRING
@@ -42,7 +48,7 @@ namespace aspnet_mysql_sample
 
         #region Get Environment Variables
 
-        private static string MYSQL_SERVICE_HOST
+       /* private static string MYSQL_SERVICE_HOST
         {
             get
             {
@@ -106,7 +112,7 @@ namespace aspnet_mysql_sample
                 return string.Empty;
             }
         }
-
+*/
         #endregion
 
     }
