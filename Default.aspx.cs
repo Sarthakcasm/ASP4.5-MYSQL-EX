@@ -24,7 +24,7 @@ namespace aspnet_mysql_sample
             }
             catch (Exception ex)
             {
-                dvErrorHeading.InnerText = "Data connection failed!";
+                dvErrorHeading.InnerText = "Data connection failed retrieve!";
                 dvErrorDetails.InnerText = ex.Message;
                 dvAlertError.Style.Add("display", "");
 
