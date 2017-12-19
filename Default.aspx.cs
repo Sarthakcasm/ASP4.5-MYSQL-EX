@@ -25,10 +25,7 @@ namespace aspnet_mysql_sample
             catch (Exception ex)
             {
                 dvErrorHeading.InnerText = "Data connection failed retrieve!";
-                dvErrorDetails.InnerText = ex.Message;
-                String innerMessage = (ex.InnerException != null) 
-                      ? ex.InnerException.Message
-                      : "";
+                dvErrorDetails.InnerText = ex.InnerException.Message;
                 dvAlertError.Style.Add("display", "");
 
                 return;
