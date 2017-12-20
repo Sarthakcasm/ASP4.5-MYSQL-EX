@@ -30,7 +30,7 @@ namespace aspnet_mysql_sample
         {
             get
             {
-               string MYSQL_SERVICE_HOST= "172.17.0.4";
+               string MYSQL_SERVICE_HOST= "172.17.0.3";
     string MYSQL_SERVICE_PORT= "3306";
     string MYSQL_DATABASE= "sampledb";
     string MYSQL_USER="sa";
